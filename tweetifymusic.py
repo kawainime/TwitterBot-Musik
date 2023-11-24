@@ -13,7 +13,7 @@ refresh_token = os.environ["SPOTIFY_REFRESH_TOKEN"]
 sp_oauth = SpotifyOAuth(
     client_id=client_id,
     client_secret=client_secret,
-    redirect_uri="http://127.0.0.1:8080/callback",
+    redirect_uri="https://spotify-refresh-token-generator.netlify.app",
     scope="user-read-recently-played",
     cache_path="token.txt",  # Path to store the token
 )
